@@ -3,6 +3,7 @@ import { StatusBar, StyleSheet } from 'react-native';
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SignUp } from './screens';
+import Tabs from './navigation/tabs';
 
 const Stack = createStackNavigator();
 
@@ -30,6 +31,9 @@ const App = () => {
         initialRouteName={'SignUp'}
       >
         <Stack.Screen name="SignUp" component={SignUp} />
+
+        {/* Tabs */}
+        <Stack.Screen name="Home" component={Tabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );

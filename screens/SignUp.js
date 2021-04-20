@@ -39,7 +39,7 @@ const SignUp = ({ navigation }) => {
         setAreas(areaData);
 
         if (areaData.length > 0) {
-          let defaultData = areaData.filter(a => a.code == 'US');
+          let defaultData = areaData.filter(a => a.code == 'KE');
 
           if (defaultData.length > 0) {
             setSelectedArea(defaultData[0]);
